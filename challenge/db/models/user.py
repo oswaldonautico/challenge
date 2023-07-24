@@ -6,7 +6,6 @@ class User(BaseModel):
     user_name: str
     codigo_zip: str
     credit_card_num: str | None
-    credit_card_ccv: str | None
     cuenta_numero: str
     direccion: str
     geo_latitud: str
