@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, status, Depends, APIRouter
-from db.models.user import User, User_Support, User_Analytics
-from db.schemes.user import user_schema, users_list_schema
-from db.client import db_client
+from challenge.db.models.user import User, User_Support, User_Analytics
+from challenge.db.schemes.user import user_schema, users_list_schema
+from challenge.db.client import db_client
 from bson import ObjectId
 from challenge import jwt_authe_users
 from challenge.jwt_authe_users import current_user_dep
